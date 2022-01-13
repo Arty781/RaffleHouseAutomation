@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseTests.PageObjects
 {
-    public class ProfileAssertions
+    public class SignUpActions
     {
     }
 }

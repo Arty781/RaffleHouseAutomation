@@ -20,15 +20,4 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="97.0.4692.7100" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="PageObjects\FooterPage\" />
-    <Folder Include="PageObjects\SignUpPage\" />
-    <Folder Include="PageObjects\DreamhomePage\" />
-    <Folder Include="PageObjects\WeeklyPage\" />
-    <Folder Include="PageObjects\FixedOddsPage\" />
-    <Folder Include="PageObjects\WinnersPage\" />
-    <Folder Include="PageObjects\AboutUsPage\" />
-    <Folder Include="PageObjects\FreeEntryPage\" />
-  </ItemGroup>
-
 </Project>

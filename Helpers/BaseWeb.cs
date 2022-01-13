@@ -29,7 +29,10 @@ namespace RaffleHouseTests.Helpers
         [OneTimeTearDown]
         public static void OneTimeTearDown()
         {
-            
+            if (_Driver != null)
+            {
+                _Driver.Quit();
+            }
         }
 
         [TearDown]

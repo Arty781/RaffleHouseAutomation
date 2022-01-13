@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseTests.PageObjects
 {
-    public class ProfileActions
+    public class ProfileActions : ProfileElements
     {
         public ProfileActions EditProfileData()
         {

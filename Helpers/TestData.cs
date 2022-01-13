@@ -22,7 +22,7 @@ namespace RaffleHouseTests.Helpers
 
     public class Credentials
     {
-        public const string login = "qatesteer91311@gmail.com";
+        public const string login = "qatester91311@gmail.com";
         public const string password = "Qaz11111";
     }
 }

@@ -22,24 +22,30 @@ namespace RaffleHouseTests.PageObjects
             return page;
         }
 
-        public static SignInActions SignIn
-        {
-            get { return GetPage<SignInActions>(); }
-        }
+        public static AboutUsActions About => GetPage<AboutUsActions>();
 
-        public static ProfileActions Profile
-        {
-            get { return GetPage<ProfileActions>(); }
-        }
+        public static DreamhomeActions Dreamhome => GetPage<DreamhomeActions>();
 
-        public static HeaderActions Header
-        {
-            get { return GetPage<HeaderActions>(); }
-        }
+        public static FixedOddsActions FixedOdds => GetPage<FixedOddsActions>();
 
-        public static HomeActions Home
-        {
-            get { return GetPage<HomeActions>(); }
-        }
+        public static FooterActions Footer => GetPage<FooterActions>();
+
+        public static FreeEntryActions FreeEntry => GetPage<FreeEntryActions>();
+
+        public static HeaderActions Header => GetPage<HeaderActions>();
+
+        public static HomeActions Home => GetPage<HomeActions>();
+
+        public static ProfileActions Profile => GetPage<ProfileActions>();
+
+        public static SignInActions SignInActions => GetPage<SignInActions>();
+        public static SignInAssertions SignInAssertions => GetPage<SignInAssertions>();
+        public static SignInActions SignInElements => GetPage<SignInActions>();
+
+        public static SignUpActions SignUp => GetPage<SignUpActions>();
+
+        public static WeeklyActions Weekly => GetPage<WeeklyActions>();
+
+        public static WinnersActions Winners => GetPage<WinnersActions>();
     }
 }
