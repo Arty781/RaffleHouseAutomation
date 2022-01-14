@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using NUnit.Allure.Core;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 namespace RaffleHouseTests.Helpers
 {
     [TestFixture]
+    [AllureNUnit]
     public class BaseWeb
     {
         public static IWebDriver _Driver = new ChromeDriver();

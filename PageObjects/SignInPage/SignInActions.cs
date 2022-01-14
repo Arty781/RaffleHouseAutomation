@@ -7,12 +7,13 @@ using System.Threading.Tasks;
 using RaffleHouseTests.PageObjects;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
+using NUnit.Allure.Steps;
 
 namespace RaffleHouseTests.PageObjects
 {
     public partial class SignInActions : SignInElements
     {
-        
+        [AllureStep]
         public SignInActions EnterLoginAndPass(string login, string password)
         {
             
