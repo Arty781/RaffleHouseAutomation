@@ -1,0 +1,76 @@
+{
+  "uuid": "279065b7-d7ba-4a54-9062-1701422c2188-tc-0-1003",
+  "name": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "children": [
+    "804f3449-80ea-4172-92bd-55b01c0f8ea5-tr-0-1004"
+  ],
+  "befores": [
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1642612746549,
+      "stop": 1642612746549
+    },
+    {
+      "name": "Initialize",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1642612746550,
+      "stop": 1642612746550
+    }
+  ],
+  "afters": [
+    {
+      "name": "TearDown",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1642612746550,
+      "stop": 1642612746550
+    },
+    {
+      "name": "OneTimeTearDown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1642612746550,
+      "stop": 1642612746550
+    }
+  ],
+  "links": [],
+  "start": 1642612738861,
+  "stop": 1642612746580
+}

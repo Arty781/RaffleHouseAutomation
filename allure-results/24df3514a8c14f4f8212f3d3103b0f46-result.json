@@ -1,0 +1,130 @@
+{
+  "uuid": "f7cab019-c0d0-4cab-b4bd-560bd0a6288b-tr-0-1004",
+  "historyId": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "fullName": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "package",
+      "value": "RaffleHouseAutomation.WebSiteTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PurchaseWeeklyPrizes"
+    },
+    {
+      "name": "testClass",
+      "value": "PaymentTests"
+    }
+  ],
+  "links": [],
+  "name": "PurchaseWeeklyPrizes",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=97.0.4692.71)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.get_Text()\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectPrize_100663447_o(String title) in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 68\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectPrize_100663447_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectPrize_100663447_w_0(Object[] )\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.SelectPrize(String title)\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 21"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PurchaseWeeklyPrizes",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=97.0.4692.71)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.get_Text()\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectPrize_100663447_o(String title) in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 68\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectPrize_100663447_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectPrize_100663447_w_0(Object[] )\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.SelectPrize(String title)\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Close Weekly PopUp",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642613360120,
+          "stop": 1642613360207
+        },
+        {
+          "name": "Select Category Tech",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642613360207,
+          "stop": 1642613363495
+        },
+        {
+          "name": "Select SubCategory Phones & Tablets",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642613363495,
+          "stop": 1642613363683
+        },
+        {
+          "name": "Select prize iPhone 12 Pro Max",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "stale element reference: element is not attached to the page document\n  (Session info: chrome=97.0.4692.71)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.get_Text()\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectPrize_100663447_o(String title) in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 68\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectPrize_100663447_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642613363683,
+          "stop": 1642613364410
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "916df6203e4b4c9cb0de6dcee0a97853-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1642613357029,
+      "stop": 1642613364704
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1642613357028,
+  "stop": 1642613364706
+}

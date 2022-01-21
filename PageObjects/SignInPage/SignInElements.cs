@@ -1,12 +1,12 @@
 ﻿using OpenQA.Selenium;
-using RaffleHouseTests.Helpers;
+using RaffleHouseAutomation.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RaffleHouseTests.PageObjects
+namespace RaffleHouseAutomation.PageObjects
 {
     public partial class SignInElements
     {

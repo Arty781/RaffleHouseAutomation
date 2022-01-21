@@ -1,15 +1,15 @@
-﻿using RaffleHouseTests.Helpers;
+﻿using RaffleHouseAutomation.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using RaffleHouseTests.PageObjects;
+using RaffleHouseAutomation.PageObjects;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using NUnit.Allure.Steps;
 
-namespace RaffleHouseTests.PageObjects
+namespace RaffleHouseAutomation.PageObjects
 {
     public partial class SignInActions : SignInElements
     {

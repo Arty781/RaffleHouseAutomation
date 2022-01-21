@@ -1,0 +1,85 @@
+{
+  "uuid": "8c338758-e09e-4c2f-932a-83e9954b8385-tr-0-1004",
+  "historyId": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "fullName": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "package",
+      "value": "RaffleHouseAutomation.WebSiteTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PurchaseWeeklyPrizes"
+    },
+    {
+      "name": "testClass",
+      "value": "PaymentTests"
+    }
+  ],
+  "links": [],
+  "name": "PurchaseWeeklyPrizes",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\r\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*/button[@class=\"close-modal-icon\"]\"}\n  (Session info: chrome=97.0.4692.71)",
+    "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at RaffleHouseAutomation.Helpers.WaitUntil.ElementIsVisible(By element, Int32 seconds) in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\Helpers\\WaitUntil.cs:line 26\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 17\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_w_0(Object[] )\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.SelectCategory()\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 18\r\n--NoSuchElementException\r\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PurchaseWeeklyPrizes",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverTimeoutException : Timed out after 10 seconds\r\n  ----> OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*/button[@class=\"close-modal-icon\"]\"}\n  (Session info: chrome=97.0.4692.71)",
+        "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at RaffleHouseAutomation.Helpers.WaitUntil.ElementIsVisible(By element, Int32 seconds) in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\Helpers\\WaitUntil.cs:line 26\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 17\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_w_0(Object[] )\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.SelectCategory()\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 18\r\n--NoSuchElementException\r\n   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at SeleniumExtras.WaitHelpers.ExpectedConditions.<>c__DisplayClass7_0.<ElementIsVisible>b__0(IWebDriver driver)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "SelectCategory",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "Timed out after 10 seconds",
+            "trace": "   at OpenQA.Selenium.Support.UI.DefaultWait`1.ThrowTimeoutException(String exceptionMessage, Exception lastException)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition, CancellationToken token)\r\n   at OpenQA.Selenium.Support.UI.DefaultWait`1.Until[TResult](Func`2 condition)\r\n   at RaffleHouseAutomation.Helpers.WaitUntil.ElementIsVisible(By element, Int32 seconds) in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\Helpers\\WaitUntil.cs:line 26\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 17\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642607274189,
+          "stop": 1642607284488
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9f72c7e87de34cc6806404a85f9e715f-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1642607271770,
+      "stop": 1642607284679
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1642607271768,
+  "stop": 1642607284681
+}

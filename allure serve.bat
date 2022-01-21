@@ -1,1 +1,1 @@
-allure serve "C:\Users\Anuitex\source\repos\RaffleHouseTests\allure-results"
+allure serve "C:\Users\Anuitex-84\source\repos\Arty781\RaffleHouseAutomation\allure-results"

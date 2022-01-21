@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RaffleHouseTests.Helpers
+namespace RaffleHouseAutomation.Helpers
 {
     class AllureServe
     {

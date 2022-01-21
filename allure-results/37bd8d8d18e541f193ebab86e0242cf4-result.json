@@ -1,0 +1,80 @@
+{
+  "uuid": "786bbb99-9a2f-4999-9da6-d9e57e0cb48f-tr-0-1004",
+  "historyId": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "fullName": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "package",
+      "value": "RaffleHouseAutomation.WebSiteTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PurchaseWeeklyPrizes"
+    },
+    {
+      "name": "testClass",
+      "value": "PaymentTests"
+    }
+  ],
+  "links": [],
+  "name": "PurchaseWeeklyPrizes",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "PurchaseWeeklyPrizes"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PurchaseWeeklyPrizes",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "SelectCategory",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642609249271,
+          "stop": 1642609260157
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "5a05bea954874c5ab8eb53fbb7d76b97-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1642609247183,
+      "stop": 1642609260329
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1642609247181,
+  "stop": 1642609260332
+}

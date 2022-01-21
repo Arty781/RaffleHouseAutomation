@@ -1,0 +1,145 @@
+{
+  "uuid": "90d055a6-b44d-4133-ba19-b7969fd607e0-tr-0-1004",
+  "historyId": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "fullName": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "package",
+      "value": "RaffleHouseAutomation.WebSiteTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PurchaseWeeklyPrizes"
+    },
+    {
+      "name": "testClass",
+      "value": "PaymentTests"
+    }
+  ],
+  "links": [],
+  "name": "PurchaseWeeklyPrizes",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <li class=\"ticket-selector__item className\" value=\"...\">+10</li> is not clickable at point (1409, 716). Other element would receive the click: <div class=\"enter-dialog__section\">...</div>\n  (Session info: chrome=97.0.4692.71)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_AddPrizeToBasket_100663448_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 92\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_AddPrizeToBasket_100663448_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_AddPrizeToBasket_100663448_w_0(Object[] )\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.AddPrizeToBasket()\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 21"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PurchaseWeeklyPrizes",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.ElementClickInterceptedException : element click intercepted: Element <li class=\"ticket-selector__item className\" value=\"...\">+10</li> is not clickable at point (1409, 716). Other element would receive the click: <div class=\"enter-dialog__section\">...</div>\n  (Session info: chrome=97.0.4692.71)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_AddPrizeToBasket_100663448_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 92\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_AddPrizeToBasket_100663448_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_AddPrizeToBasket_100663448_w_0(Object[] )\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.AddPrizeToBasket()\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 21"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Close Weekly PopUp",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642614736539,
+          "stop": 1642614736611
+        },
+        {
+          "name": "Select Category Tech",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642614736612,
+          "stop": 1642614739910
+        },
+        {
+          "name": "Select SubCategory Phones & Tablets",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642614739911,
+          "stop": 1642614743276
+        },
+        {
+          "name": "Select prize iPhone 12 Pro Max",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642614743276,
+          "stop": 1642614747272
+        },
+        {
+          "name": "Add prize to Basket",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "element click intercepted: Element <li class=\"ticket-selector__item className\" value=\"...\">+10</li> is not clickable at point (1409, 716). Other element would receive the click: <div class=\"enter-dialog__section\">...</div>\n  (Session info: chrome=97.0.4692.71)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Click()\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_AddPrizeToBasket_100663448_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 92\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_AddPrizeToBasket_100663448_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642614747273,
+          "stop": 1642614751477
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "79ca94c6808244b29be55dd162837d1a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1642614733748,
+      "stop": 1642614751624
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1642614733747,
+  "stop": 1642614751627
+}

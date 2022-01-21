@@ -1,17 +1,16 @@
 using NUnit.Framework;
-using RaffleHouseTests.Helpers;
-using RaffleHouseTests.PageObjects;
-using RaffleHouseTests.TESTS;
+using RaffleHouseAutomation.Helpers;
+using RaffleHouseAutomation.PageObjects;
 
-namespace RaffleHouseTests.Tests
+namespace RaffleHouseAutomation.WebSiteTests
 {
-    public class Tests : TestBase
+    public class AuthTests : TestBase
     {
 
        [Test]
         public void LoginByEmail()
         {
-            Pages.Header
+            Pages.HeaderActions
                 .OpenSignInPage();
             Pages.SignInActions
                 .EnterLoginAndPass(Credentials.login, Credentials.password);
@@ -23,7 +22,7 @@ namespace RaffleHouseTests.Tests
         [Test]
         public void LoginByGoogle()
         {
-            Pages.Header
+            Pages.HeaderActions
                 .OpenSignInPage();
             Pages.SignInActions
                 .GoogleAuth(Credentials.login, Credentials.password);

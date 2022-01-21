@@ -1,0 +1,80 @@
+{
+  "uuid": "28619261-28ac-42fb-9ce1-df59acc96a2a-tr-0-1001",
+  "historyId": "RaffleHouseAutomation.Tests.Tests.LoginByEmail",
+  "fullName": "RaffleHouseAutomation.Tests.Tests.LoginByEmail",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "package",
+      "value": "RaffleHouseAutomation.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "LoginByEmail"
+    },
+    {
+      "name": "testClass",
+      "value": "Tests"
+    }
+  ],
+  "links": [],
+  "name": "LoginByEmail",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "LoginByEmail"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "LoginByEmail",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "EnterLoginAndPass",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642124851662,
+          "stop": 1642124852023
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7542a0be81e54f4e865f33fdaf20431b-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1642124848961,
+      "stop": 1642124852763
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1642124848961,
+  "stop": 1642124852769
+}

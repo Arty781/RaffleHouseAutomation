@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RaffleHouseTests.PageObjects
+namespace RaffleHouseAutomation.PageObjects
 {
     public class SignUpActions
     {

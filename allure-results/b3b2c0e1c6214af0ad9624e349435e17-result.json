@@ -1,0 +1,67 @@
+{
+  "uuid": "97a4ecbb-c3ff-4e40-94e5-9cd28252c8c3-tr-0-1004",
+  "historyId": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "fullName": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "package",
+      "value": "RaffleHouseAutomation.WebSiteTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PurchaseWeeklyPrizes"
+    },
+    {
+      "name": "testClass",
+      "value": "PaymentTests"
+    }
+  ],
+  "links": [],
+  "name": "PurchaseWeeklyPrizes",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@class='toggle-live-btn toggle-live-btn-desk false']\"}\n  (Session info: chrome=97.0.4692.71)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at RaffleHouseAutomation.PageObjects.HeaderElements.get_liveCompetitionsList() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\HeaderPage\\HeaderElements.cs:line 16\r\n   at RaffleHouseAutomation.PageObjects.HeaderActions.OpenWeeklyPrizesPage() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\HeaderPage\\HeaderActions.cs:line 33\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 17"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PurchaseWeeklyPrizes",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@class='toggle-live-btn toggle-live-btn-desk false']\"}\n  (Session info: chrome=97.0.4692.71)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at RaffleHouseAutomation.PageObjects.HeaderElements.get_liveCompetitionsList() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\HeaderPage\\HeaderElements.cs:line 16\r\n   at RaffleHouseAutomation.PageObjects.HeaderActions.OpenWeeklyPrizesPage() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\HeaderPage\\HeaderActions.cs:line 33\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 17"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "56c54cd1193740bdb023f088ed88d4f5-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1642614704552,
+      "stop": 1642614705179
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1642614704551,
+  "stop": 1642614705184
+}

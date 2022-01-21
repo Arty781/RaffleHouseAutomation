@@ -1,0 +1,85 @@
+{
+  "uuid": "5bd583cf-7285-4607-8159-6ac7a031d386-tr-0-1004",
+  "historyId": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "fullName": "RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "NonParallelWorker"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-LJLCVVA"
+    },
+    {
+      "name": "package",
+      "value": "RaffleHouseAutomation.WebSiteTests"
+    },
+    {
+      "name": "testMethod",
+      "value": "PurchaseWeeklyPrizes"
+    },
+    {
+      "name": "testClass",
+      "value": "PaymentTests"
+    }
+  ],
+  "links": [],
+  "name": "PurchaseWeeklyPrizes",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name =\"Tech\"]\"}\n  (Session info: chrome=97.0.4692.71)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebElement.FindElement(By by)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 21\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_w_0(Object[] )\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.SelectCategory()\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 18"
+  },
+  "stage": "finished",
+  "steps": [
+    {
+      "name": "PurchaseWeeklyPrizes",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name =\"Tech\"]\"}\n  (Session info: chrome=97.0.4692.71)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebElement.FindElement(By by)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 21\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_w_0(Object[] )\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.SelectCategory()\r\n   at RaffleHouseAutomation.WebSiteTests.PaymentTests.PurchaseWeeklyPrizes() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\WebSiteTests\\PaymentTests.cs:line 18"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "SelectCategory",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"*[name =\"Tech\"]\"}\n  (Session info: chrome=97.0.4692.71)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebElement.FindElement(By by)\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_o() in C:\\Users\\Anuitex-84\\Source\\Repos\\Arty781\\RaffleHouseAutomation\\PageObjects\\WeeklyPage\\WeeklyActions.cs:line 21\r\n   at RaffleHouseAutomation.PageObjects.WeeklyActions.__a$_around_SelectCategory_100663443_u(Object[] )\r\n   at NUnit.Allure.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1642607585871,
+          "stop": 1642607586626
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "515302cb9168444db2fd6a467831ec08-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1642607583580,
+      "stop": 1642607586744
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1642607583578,
+  "stop": 1642607586748
+}

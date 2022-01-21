@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RaffleHouseTests.Helpers
+namespace RaffleHouseAutomation.Helpers
 {
     public class Endpoints
     {
@@ -24,5 +24,15 @@ namespace RaffleHouseTests.Helpers
     {
         public const string login = "qatester91311@gmail.com";
         public const string password = "Qaz11111";
+    }
+
+    public class Categories
+    {
+        public const string category = "Tech";
+    }
+
+    public class SubCategories
+    {
+        public const string subCategory = "Phones & Tablets";
     }
 }
