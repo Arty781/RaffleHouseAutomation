@@ -8,13 +8,14 @@ using RaffleHouseAutomation.PageObjects;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using NUnit.Allure.Steps;
+using System.Diagnostics;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public partial class SignInActions : SignInElements
+    public partial class SignIn : BaseWeb
     {
         [AllureStep]
-        public SignInActions EnterLoginAndPass(string login, string password)
+        public SignIn EnterLoginAndPass(string login, string password)
         {
             
             WaitUntil.ElementIsClickable(InputLogin, 3);
@@ -26,7 +27,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public SignInActions GoogleAuth(string login, string password)
+        public SignIn GoogleAuth(string login, string password)
         {
 
             WaitUntil.ElementIsClickable(SignInGoogleBtn, 3);
@@ -35,14 +36,14 @@ namespace RaffleHouseAutomation.PageObjects
             SwitchWindow();
             WaitUntil.ElementIsClickable(GoogleEmailInput, 3);
             GoogleEmailInput.SendKeys(login);
-            new Actions(BaseWeb._Driver)
+            new Actions(Browser._Driver)
                 .SendKeys(Keys.Enter)
                 .Build()
                 .Perform();
             /*GoogleNextBtn.SendKeys(Keys.Enter);*/
             WaitUntil.ElementIsVisibleAndClickable(_GooglePasswordInput, 10);
             GooglePasswordInput.SendKeys(password);
-            new Actions(BaseWeb._Driver)
+            new Actions(Browser._Driver)
                 .SendKeys(Keys.Enter)
                 .Build()
                 .Perform();
@@ -54,10 +55,10 @@ namespace RaffleHouseAutomation.PageObjects
 
 
 
-        public SignInActions SwitchWindow()
+        public SignIn SwitchWindow()
         {
             WaitUntil.WaitSomeInterval(5);
-            BaseWeb._Driver.SwitchTo().Window(BaseWeb._Driver.WindowHandles.ToList().Last());
+            Browser._Driver.SwitchTo().Window(Browser._Driver.WindowHandles.ToList().Last());
             return this;
         }
     }

@@ -15,34 +15,29 @@ namespace RaffleHouseAutomation.Helpers
     [AllureNUnit]
     public class BaseWeb
     {
-        public static IWebDriver _Driver = new ChromeDriver();
-        [OneTimeSetUp]
+       
+        public static Process _process;
 
-            public static void Initialize()
-        {
-             
-            _Driver.Manage().Window.Maximize();
-            _Driver.Manage().Cookies.DeleteAllCookies();
-            
-        }
-        
-        
-        
+        [OneTimeSetUp]
+        public static void OneTimeSetUp() => _process = Process.Start(Browser.RootPath1() + ChromeDriverPath.path);
+
+
+
         [OneTimeTearDown]
         public static void OneTimeTearDown()
         {
-            if (_Driver != null)
+            if (_process != null)
             {
-                _Driver.Quit();
+                _process.Kill();
             }
         }
 
         [TearDown]
         public static void TearDown()
         {
-            if (_Driver != null)
+            if (Browser._Driver != null)
             {
-                _Driver.Close();
+                Browser.Close();
             }
         }
     }

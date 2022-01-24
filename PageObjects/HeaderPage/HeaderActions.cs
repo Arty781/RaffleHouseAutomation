@@ -7,10 +7,10 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public class HeaderActions : HeaderElements
+    public partial class Header
     {
         #region Opening links in header
-        public HeaderActions OpenHomePage()
+        public Header OpenHomePage()
         {
             WaitUntil.ElementIsVisibleAndClickable(_logo);
             logo.Click();
@@ -18,7 +18,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenDreamhomePage()
+        public Header OpenDreamhomePage()
         {
             WaitUntil.ElementIsClickable(liveCompetitionsList);
             liveCompetitionsList.Click();
@@ -28,7 +28,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenWeeklyPrizesPage()
+        public Header OpenWeeklyPrizesPage()
         {
             WaitUntil.ElementIsClickable(liveCompetitionsList);
             liveCompetitionsList.Click();
@@ -37,7 +37,7 @@ namespace RaffleHouseAutomation.PageObjects
 
             return this;
         }
-        public HeaderActions OpenFixedOddsPrizesPage()
+        public Header OpenFixedOddsPrizesPage()
         {
             WaitUntil.ElementIsClickable(liveCompetitionsList);
             liveCompetitionsList.Click();
@@ -47,7 +47,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenWinnersPage()
+        public Header OpenWinnersPage()
         {
             WaitUntil.ElementIsClickable(winnersLink);
             winnersLink.Click();
@@ -55,7 +55,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenFAQsPage()
+        public Header OpenFAQsPage()
         {
             WaitUntil.ElementIsClickable(faqsLink);
             faqsLink.Click();
@@ -63,7 +63,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenAboutPage()
+        public Header OpenAboutPage()
         {
             WaitUntil.ElementIsClickable(aboutLink);
             aboutLink.Click();
@@ -71,7 +71,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenSignInPage()
+        public Header OpenSignInPage()
         {
             WaitUntil.ElementIsClickable(signInBtn);
             signInBtn.Click();
@@ -79,7 +79,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenSignUpPage()
+        public Header OpenSignUpPage()
         {
             WaitUntil.ElementIsClickable(signUpBtn);
             signUpBtn.Click();
@@ -87,7 +87,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenFreeEntryPage()
+        public Header OpenFreeEntryPage()
         {
             WaitUntil.ElementIsClickable(freeEntryBtn);
             freeEntryBtn.Click();
@@ -95,7 +95,7 @@ namespace RaffleHouseAutomation.PageObjects
             return this;
         }
 
-        public HeaderActions OpenCartPage()
+        public Header OpenCartPage()
         {
             WaitUntil.ElementIsClickable(cartBtn);
             cartBtn.Click();

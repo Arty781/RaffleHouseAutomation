@@ -8,32 +8,35 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public class WeeklyElements
+    public partial class Weekly
     {
-        public IWebElement counterPop => BaseWeb._Driver.FindElement(_counterPop);
+        public IWebElement counterPop => Browser._Driver.FindElement(_counterPop);
         public readonly static By _counterPop = By.XPath("//*/div[contains(text(), \"Next Winner Draw In: \")]");
 
-        public IWebElement mainPageBannerInf => BaseWeb._Driver.FindElement(_mainPageBannerInf);
+        public IWebElement mainPageBannerInf => Browser._Driver.FindElement(_mainPageBannerInf);
         public readonly static By _mainPageBannerInf = By.XPath("//*/div[@class='lifestyle-prizes-banner__info']");
 
 
-        public IWebElement categorySlider => BaseWeb._Driver.FindElement(_categorySlider);
+        public IWebElement categorySlider => Browser._Driver.FindElement(_categorySlider);
         public readonly static By _categorySlider = By.XPath("//*/ul/li[contains(@class,\"react-multi-carousel-item\")][contains(@class,\"active\")]/div/div");
 
-        public IWebElement subCategoryFilter => BaseWeb._Driver.FindElement(_subCategoryFilter);
+        public IWebElement subCategoryFilter => Browser._Driver.FindElement(_subCategoryFilter);
         public readonly static By _subCategoryFilter = By.XPath("//*[contains(text(), 'View subcategories')]");
         
-        public IWebElement selectSubCategory => BaseWeb._Driver.FindElement(_selectSubCategory);
+        public IWebElement selectSubCategory => Browser._Driver.FindElement(_selectSubCategory);
         public readonly static By _selectSubCategory = By.XPath("//*/ul[@class=\"filter-select__list\"]/li");
 
-        public IWebElement weeklyProductCardImg => BaseWeb._Driver.FindElement(_weeklyProductCardImg);
-        public readonly static By _weeklyProductCardImg = By.XPath("//*/article");
+        public IWebElement weeklyProductCard => Browser._Driver.FindElement(_weeklyProductCard);
+        public readonly static By _weeklyProductCard = By.XPath("//*/article");
 
-        public IWebElement weeklyProductCardTitle => BaseWeb._Driver.FindElement(_weeklyProductCardTitle);
-        public readonly static By _weeklyProductCardTitle = By.XPath("//*/article/div[2]/h3");
+        public IWebElement weeklyProductCardEnt => Browser._Driver.FindElement(_weeklyProductCardEnt);
+        public readonly static By _weeklyProductCardEnt = By.XPath("//*/article/div[1]/button");
+
+        public IWebElement weeklyProductCardTitle => Browser._Driver.FindElement(_weeklyProductCardTitle);
+        public readonly static By _weeklyProductCardTitle = By.XPath("//*/article/div[2]/div/h3");
 
 
-        public IWebElement closeWeeklyPopUp => BaseWeb._Driver.FindElement(_closeWeeklyPopUp);
+        public IWebElement closeWeeklyPopUp => Browser._Driver.FindElement(_closeWeeklyPopUp);
         public readonly static By _closeWeeklyPopUp = By.XPath("//*/button[contains(text(), 'OK')]");
 
     }

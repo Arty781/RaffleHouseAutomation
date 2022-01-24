@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public class WeeklyActions : WeeklyElements
+    public partial class Weekly
     {
         [AllureStep("Close Weekly PopUp")]
-        public WeeklyActions CloseWeeklyPopUp()
+        public Weekly CloseWeeklyPopUp()
         {
             WaitUntil.ElementIsVisible(_closeWeeklyPopUp, 10);
             closeWeeklyPopUp.Click();
@@ -22,10 +22,11 @@ namespace RaffleHouseAutomation.PageObjects
         }
 
         [AllureStep("Select Category {0}")]
-        public WeeklyActions SelectCategory(string category)
+        public Weekly SelectCategory(string category)
         {
-           WaitUntil.WaitSomeInterval(3);
-            IReadOnlyCollection<IWebElement> catList = BaseWeb._Driver.FindElements(_categorySlider);
+           /*WaitUntil.WaitSomeInterval(3);*/
+            WaitUntil.ElementIsVisible(_categorySlider);
+            IReadOnlyCollection<IWebElement> catList = Browser._Driver.FindElements(_categorySlider);
             foreach(var cat in catList)
             {
                 if (cat.Displayed == true && cat.Text == category)
@@ -40,12 +41,12 @@ namespace RaffleHouseAutomation.PageObjects
         }
 
         [AllureStep("Select SubCategory {0}")]
-        public WeeklyActions SelectSubCategory(string subcategory)
+        public Weekly SelectSubCategory(string subcategory)
         {
             subCategoryFilter.Click();
 
-            WaitUntil.WaitSomeInterval(3);
-            IReadOnlyCollection<IWebElement> subCatList = BaseWeb._Driver.FindElements(_selectSubCategory);
+            WaitUntil.WaitSomeInterval(1);
+            IReadOnlyCollection<IWebElement> subCatList = Browser._Driver.FindElements(_selectSubCategory);
             foreach(var subCat in subCatList)
             {
                 
@@ -60,31 +61,37 @@ namespace RaffleHouseAutomation.PageObjects
         }
 
         [AllureStep("Select prize {0}")]
-        public WeeklyActions SelectPrize(string title)
+        public Weekly SelectPrize(string title)
         {
             WaitUntil.WaitSomeInterval(3);
-            IReadOnlyCollection<IWebElement> prizeList = BaseWeb._Driver.FindElements(_weeklyProductCardImg);
+            IReadOnlyCollection<IWebElement> prizeList = Browser._Driver.FindElements(_weeklyProductCard);
             foreach (var prize in prizeList)
             {
                
                 
-                if (prize.Displayed == true && prize.FindElement(_weeklyProductCardTitle).Text == title)
+                if (prize.FindElement(_weeklyProductCardTitle).Displayed == true)
+                {
+                   
+                    if (prize.FindElement(_weeklyProductCardTitle).Text == title)
                     {
-                        new Actions(BaseWeb._Driver)
-                    .MoveToElement(prize)
-                    .Build()
-                    .Perform();
-                        prize.Click();
+                        new Actions(Browser._Driver)
+                            .MoveToElement(prize);
+                        var prizeImg = prize.FindElement(_weeklyProductCardEnt);
+                        
+                        prizeImg.Click();
                         break;
                     }
-                
+                    
+                }
+                        
+
             }
 
             return this;
         }
 
         [AllureStep("Add prize to Basket")]
-        public WeeklyActions AddPrizeToBasket()
+        public Weekly AddPrizeToBasket()
         {
             WaitUntil.WaitSomeInterval(3);
             Pages.CommonElements
