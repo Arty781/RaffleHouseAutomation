@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public class FixedOddsAssertions
+    public partial class FixedOdds
     {
     }
 }

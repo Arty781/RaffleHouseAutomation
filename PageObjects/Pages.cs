@@ -16,60 +16,24 @@ namespace RaffleHouseAutomation.PageObjects
         private static T GetPage<T>() where T : new()
         {
             var page = new T();
-            IWebDriver driver = BaseWeb._Driver;
+            IWebDriver driver = Browser._Driver;
             PageFactory.InitElements(driver, page);
 
             return page;
         }
 
-        public static AboutUsActions AboutActions => GetPage<AboutUsActions>();
-        public static AboutUsAssertions AboutAssertions => GetPage<AboutUsAssertions>();
-        public static AboutUsElements AboutElements => GetPage<AboutUsElements>();
-
-        public static CommonActions CommonActions => GetPage<CommonActions>();
-        public static CommonAssertions CommonAssertions => GetPage<CommonAssertions>();
-        public static CommonElements CommonElements => GetPage<CommonElements>();
-
-        public static DreamhomeActions DreamhomeActions => GetPage<DreamhomeActions>();
-        public static DreamhomeAssertions DreamhomeAssertions => GetPage<DreamhomeAssertions>();
-        public static DreamhomeElements DreamhomeElements => GetPage<DreamhomeElements>();
-
-        public static FixedOddsActions FixedOddsActions => GetPage<FixedOddsActions>();
-        public static FixedOddsAssertions FixedOddsAssertions => GetPage<FixedOddsAssertions>();
-        public static FixedOddsElements FixedOddsElements => GetPage<FixedOddsElements>();
-
-        public static FooterActions FooterActions => GetPage<FooterActions>();
-        public static FooterAssertions FooterAssertions => GetPage<FooterAssertions>();
-        public static FooterElements FooterElements => GetPage<FooterElements>();
-
-        public static FreeEntryActions FreeEntry => GetPage<FreeEntryActions>();
-
-        public static HeaderActions HeaderActions => GetPage<HeaderActions>();
-        public static HeaderAssertions HeaderAssertions => GetPage<HeaderAssertions>();
-        public static HeaderElements HeaderElements => GetPage<HeaderElements>();
-
-        public static HomeActions HomeActions => GetPage<HomeActions>();
-        public static HomeAssertions HomeAssertions => GetPage<HomeAssertions>();
-        public static HomeElements HomeElements => GetPage<HomeElements>();
-
-        public static ProfileActions ProfileActions => GetPage<ProfileActions>();
-        public static ProfileAssertions ProfileAssertions => GetPage<ProfileAssertions>();
-        public static ProfileElements ProfileElements => GetPage<ProfileElements>();
-
-        public static SignInActions SignInActions => GetPage<SignInActions>();
-        public static SignInAssertions SignInAssertions => GetPage<SignInAssertions>();
-        public static SignInActions SignInElements => GetPage<SignInActions>();
-
-        public static SignUpActions SignUpActions => GetPage<SignUpActions>();
-        public static SignUpAssertions SignUpAssertions => GetPage<SignUpAssertions>();
-        public static SignUpActions SignUpElements => GetPage<SignUpActions>();
-
-        public static WeeklyActions WeeklyActions => GetPage<WeeklyActions>();
-        public static WeeklyAssertions WeeklyAssertions => GetPage<WeeklyAssertions>();
-        public static WeeklyElements WeeklyElements => GetPage<WeeklyElements>();
-
-        public static WinnersActions WinnersActions => GetPage<WinnersActions>();
-        public static WinnersAssertions WinnersAssertions => GetPage<WinnersAssertions>();
-        public static WinnersElements WinnersElements => GetPage<WinnersElements>();
+        public static AboutUs About => GetPage<AboutUs>();
+        public static Common Common => GetPage<Common>();
+        public static Dreamhome Dreamhome => GetPage<Dreamhome>();
+        public static FixedOdds FixedOdds => GetPage<FixedOdds>();
+        public static Footer Footer => GetPage<Footer>();
+        public static FreeEntry FreeEntry => GetPage<FreeEntry>();
+        public static Header Header => GetPage<Header>();
+        public static Home Home => GetPage<Home>();
+        public static Profile Profile => GetPage<Profile>();
+        public static SignIn SignIn => GetPage<SignIn>();
+        public static SignUp SignUp => GetPage<SignUp>();
+        public static Weekly Weekly => GetPage<Weekly>();
+        public static Winners Winners => GetPage<Winners>();
     }
 }

@@ -35,4 +35,9 @@ namespace RaffleHouseAutomation.Helpers
     {
         public const string subCategory = "Phones & Tablets";
     }
+
+    public class ChromeDriverPath
+    {
+        public const string path = @"chromedriver.exe";
+    }
 }

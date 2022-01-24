@@ -1,8 +1,9 @@
-﻿/*using NUnit.Framework;
+﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
 using OpenQA.Selenium.Chrome;
+using RaffleHouseAutomation.Helpers;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,47 +11,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RaffleHouseAutomation
+namespace RaffleHouseAutomation.Helpers
 {
-   public class Browser
+    public class Browser
     {
-        public IWebDriver WebDriver { get; set; }
-        *//*public static IWebDriver webDriver = new ChromeDriver();*//*
-        public WindowsDriver<WindowsElement> WindowsDriver { get; set; }
-        private static WindowsDriver<WindowsElement> windowsDriver;
+        public IWebDriver WindowsDriver { get; set; }
+        private static IWebDriver windowsDriver;
 
 
-
-
-        public Browser(IWebDriver webDriver)
-        {
-            WebDriver = webDriver;
-        }
-        public Browser(WindowsDriver<WindowsElement> windowsDriver)
+        public Browser(IWebDriver windowsDriver)
         {
             WindowsDriver = windowsDriver;
         }
 
-
-        *//*public static void Initialize()
-        {
-            
-            webDriver.Manage().Cookies.DeleteAllCookies();
-            webDriver.Manage().Window.Maximize();
-            webDriver.Navigate().GoToUrl("https://staging.rafflehouse.com/");
-
-            
-        }*//*
-
         public static void Initialize(string application)
         {
-            AppiumOptions options = new();
-            options.AddAdditionalCapability("app", application);
-            options.AddAdditionalCapability("deviceName", "WindowsPC");
-            options.AddAdditionalCapability("ms:waitForAppLaunch", 3);
-            windowsDriver = new WindowsDriver<WindowsElement>(new Uri("http://127.0.0.1:4723/"), options);
+            windowsDriver = new ChromeDriver();
+            _Driver.Manage().Cookies.DeleteAllCookies();
+            _Driver.Manage().Window.Maximize();
+            
             Assert.NotNull(windowsDriver);
-            windowsDriver.Manage().Window.Maximize();
         }
 
 
@@ -60,48 +40,37 @@ namespace RaffleHouseAutomation
             return mainpath;
         }
         public static ISearchContext Driver { get { return windowsDriver; } }
-        public static WindowsDriver<WindowsElement> _Driver { get { return windowsDriver; } }
-        *//*public static string Title
+        public static IWebDriver _Driver { get { return windowsDriver; } }
+        public static string Title
         {
-            get { return webDriver.Title; }
+            get { return windowsDriver.Title; }
         }
 
         public static string CurrentURL
         {
-            get { return webDriver.Url; }
-        }
-
-        public static ISearchContext Driver
-        {
-            get { return webDriver; }
-        }
-
-        public static IWebDriver _Driver
-        {
-            get { return webDriver; }
+            get { return windowsDriver.Url; }
         }
 
         public static void Close()
         {
-            webDriver.Close();
+            windowsDriver.Close();
         }
 
         public static void Quit()
         {
-            webDriver.Quit();
-        }*//*
+            windowsDriver.Quit();
+        }
 
         public static string RootPath1()
         {
             string currentPath = AppDomain.CurrentDomain.BaseDirectory;
             var directoryName = System.IO.Path.GetDirectoryName(currentPath);
             var directory = System.IO.Path.GetDirectoryName(directoryName);
-            var mainpath = directory.Replace("\\bin\\Debug", "");
+            
 
-            return mainpath;
+            return currentPath;
         }
 
 
     }
 }
-*/

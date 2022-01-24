@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public class FooterAssertions
+    public partial class Footer
     {
     }
 }

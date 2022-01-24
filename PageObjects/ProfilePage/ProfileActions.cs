@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public class ProfileActions : ProfileElements
+    public partial class Profile
     {
-        public ProfileActions EditProfileData()
+        public Profile EditProfileData()
         {
-            BaseWeb._Driver.Navigate().GoToUrl("https://staging.rafflehouse.com/profile");
+            Browser._Driver.Navigate().GoToUrl("https://staging.rafflehouse.com/profile");
             return this;
         }
     }

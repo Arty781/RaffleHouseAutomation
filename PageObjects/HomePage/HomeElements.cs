@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public class HomeElements
+    public partial class Home
     {
+
     }
 }

@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace RaffleHouseAutomation.PageObjects
 {
-    public class CommonActions : CommonElements
+    public partial class Common
     {
-        public CommonActions CloseCookiesPopUp()
+        public Common CloseCookiesPopUp()
         {
             WaitUntil.ElementIsVisibleAndClickable(_confirmCookieBtn);
             confirmCookieBtn.Click();
